@@ -7,25 +7,25 @@ cabal-version: 1.12
 name:           lisp
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/lisp#readme>
-homepage:       https://github.com/githubuser/lisp#readme
-bug-reports:    https://github.com/githubuser/lisp/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2021 Author name here
+homepage:       https://github.com/Sventimir/lisp#readme
+bug-reports:    https://github.com/Sventimir/lisp/issues
+author:         Sventimir
+maintainer:     svantimir@gmail.com
+copyright:      2021 Sventimir
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    ChangeLog.md
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/lisp
+  location: https://github.com/Sventimir/lisp
 
 library
   exposed-modules:
-      Data.Token
+      Data.AST.Typed
+      Parser.AST
   other-modules:
       Paths_lisp
   hs-source-dirs:
