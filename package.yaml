@@ -1,6 +1,6 @@
-name:                lisp
+name:                veles
 version:             0.1.0.0
-github:              "Sventimir/lisp"
+github:              "Sventimir/veles"
 license:             BSD3
 author:              "Sventimir"
 maintainer:          "svantimir@gmail.com"
@@ -29,7 +29,7 @@ library:
   source-dirs: src
 
 executables:
-  lisp-exe:
+  veles-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -37,7 +37,8 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - lisp
+    - veles
+    - text
 
 tests:
   lisp-test:
@@ -48,4 +49,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - lisp
+    - veles
